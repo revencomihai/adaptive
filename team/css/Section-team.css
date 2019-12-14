@@ -1,0 +1,94 @@
+body{
+    font-family: 'Rubik', sans-serif; 
+}
+header{
+    margin-top: 150px;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.section-team{
+    text-align: center;
+}
+.section-team img{
+    width: 250px;
+}
+.section-team .avatars>div{
+    display: inline-block;
+    background-color: #ccc;
+    height: 250px;
+    width: 250px;
+    border-radius: 1000px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.section-team .avatars>div .info{
+    background-image: linear-gradient(90deg, rgba(22,11,194,0.8), rgba(133,12,182,0.8));
+    height: inherit;
+    width: inherit;
+    position: relative;
+    transition: 0.3s;
+    bottom:0;
+    opacity: 0;
+}
+
+.section-team .avatars>div:hover .info{
+    bottom: 107%;
+    opacity: 1;
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+}
+h2{
+    margin-top:20px;
+    margin-bottom:40px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #929292;
+   font-weight: normal;
+}
+h3{
+    transform: translateY(80px);
+    font-size: 20px;
+    font-weight: 900;
+    color:rgb(241, 241, 241);
+}
+.section-team .avatars .info p:first-of-type{
+    font-size: 14px;
+    color:rgb(228, 228, 228);
+    margin-top: 90px;
+    margin-bottom:28px;
+}
+.section-team .avatars .info a{
+    color: rgb(228, 228, 228);
+    margin: 0 10px;
+}
+@media screen and (max-width:1100px){
+    .section-team{
+        width: 800px;
+    }
+    .avatars{
+        width: 800px;
+        margin-right: 0;
+    }
+    .avatars img{
+        width:100%;
+    }
+}
+@media screen and (max-width:800px){
+    .section-team{
+        width: 400px;
+    }
+    .avatars{
+        width: 400px;
+        
+    }
+    .avatars .info{
+        margin-bottom: 20px;
+    }
+    .avatars img{
+        width: 100%;
+    }
+}
